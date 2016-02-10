@@ -27,7 +27,6 @@ Evaluates the continued fraction described by the supplied `generator` argument.
 	<br>
 </div>
 
-
 Using an ES6 [Generator object][es6-generator]:
 
 ```javascript
