@@ -22,13 +22,10 @@ var continued_fraction = require( 'math-continued-fraction' );
 
 Evaluates the continued fraction described by the supplied `generator` argument. `generator` can be either a function which returns an array with two elements, the `a` and `b` terms of the fraction, or an ES6 [Generator object][es6-generator]. By default, the function computes
 
->           a1
->      ---------------
->      b1 +     a2
->           ----------
->            b2 +   a3
->                -----
->               b3 + ...
+<div class="equation" align="center" data-raw-text="latex" data-equation="eq:b_0 + \frac{a_1}{b_1+\frac{a_2}{b_2+\frac{a_3}{b_3+\frac{a_4}{b_4}+\ldots}}}">
+	<img src="path" alt="Continued fraction without leading b_0 term">
+	<br>
+</div>
 
 
 Using an ES6 [Generator object][es6-generator]:
@@ -72,13 +69,10 @@ The `function` accepts the following `options`:
 
 To evaluate
 
->	  b0 +	   a1
->	  ---------------
->	  b1 +	 a2
->		   ----------
->		   b2 +   a3
->				-----
->				b3 + ...
+<div class="equation" align="center" data-raw-text="b_0 + \frac{a_1}{b_1+\frac{a_2}{b_2+\frac{a_3}{b_3+\frac{a_4}{b_4}+\ldots}}}" data-equation="eq:funname">
+	<img src="path" alt="Continued fraction with leading b_0 term">
+	<br>
+</div>
 
 set the `keep` option to `true`.
 
