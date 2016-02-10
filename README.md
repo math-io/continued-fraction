@@ -89,7 +89,7 @@ var out = continued_fraction( generator(), {
 
 ## Implementation
 
-The underlying function of this module were ported from the [Boost C++ library][boost-library] and use the modified Lentz algorithm.
+The underlying functions used by this module were ported from the [Boost C++ library][boost-library] and use the modified Lentz algorithm.
 
 References:
 > Numeric Recipes in C++, W. H. Press et all, chapter 5, p 175 - 179
