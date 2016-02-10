@@ -72,13 +72,13 @@ The `function` accepts the following `options`:
 
 To evaluate
 
->	  b0 +	   a1
->	  ---------------
->	  b1 +	 a2
->		   ----------
->		   b2 +   a3
->				-----
->				b3 + ...
+>	 b0  + 	  a1
+>	       ---------
+>	        b1  +  a2
+>		     --------
+>		      b2  +  a3
+>			   -------
+>			    b3 + ...
 
 set the `keep` option to `true`.
 
