@@ -31,9 +31,12 @@ Evaluates the continued fraction described by the supplied `generator` argument.
 >               b3 + ...
 
 
+Using an ES6 [Generator object][es6-generator]:
+
 ```javascript
 // Continued fraction for (e-1)^(-1):
-var out = continued_fraction( generator() );
+var gen = generator();
+var out = continued_fraction( gen );
 // returns ~0.582
 
 function* generator() {
@@ -42,6 +45,23 @@ function* generator() {
 		i++;
 		yield [ i, i ];
 	}
+}
+```
+
+Alternatively, one can use a closure to achieve the same goal:
+
+```javascript
+// Continued fraction for (e-1)^(-1):
+var gen = generator()
+var out = continued_fraction( gen );
+// returns ~0.582
+
+function generator() {
+	var i = 0;
+	return function() {
+		i++;
+		return [ i, i ];
+	};
 }
 ```
 
