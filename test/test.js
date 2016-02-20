@@ -65,22 +65,20 @@ tape( 'if keep option is true, the function evaluates the continued fraction wit
 	t.end();
 
 	// Continued fraction for (I_1(2))/(I_0(2)), see http://mathworld.wolfram.com/ContinuedFraction.html:
-	function* generator1() {
-		var b = 0;
-		yield [ 1, b ];
-		while ( true ) {
+	function generator1() {
+		var b = -1;
+		return function() {
 			b += 1;
-			yield [ 1, b ];
-		}
+			return [ 1, b ];
+		};
 	}
 
 	// Continued fraction for sqrt(2/(epi))[erfc(2^(-1/2))]^(-1), see http://mathworld.wolfram.com/ContinuedFraction.html:
-	function* generator2() {
-		var a = 0;
-		yield [ a, 1 ];
-		while ( true ) {
+	function generator2() {
+		var a = -1;
+		return function() {
 			a += 1;
-			yield [ a, 1 ];
-		}
+			return [ a, 1 ];
+		};
 	}
 });

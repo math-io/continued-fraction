@@ -36,7 +36,7 @@
     "mathematics",
     "series",
     "fraction",
-    "expansion"    
+    "expansion"
   ],
   "bugs": {
     "url": "https://github.com/math-io/continued-fraction/issues"
@@ -51,6 +51,7 @@
   "devDependencies": {
     "browserify": "12.x.x",
     "codecov": "1.x.x",
+    "detect-generator-support": "^1.0.2",
     "istanbul": "^0.4.1",
     "jshint": "2.x.x",
     "jshint-stylish": "2.x.x",
