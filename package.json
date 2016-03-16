@@ -43,10 +43,7 @@
   },
   "dependencies": {
     "const-smallest-float32": "^1.0.2",
-    "math-abs": "^1.0.2",
-    "validate.io-boolean-primitive": "^1.0.0",
-    "validate.io-number-primitive": "^1.0.0",
-    "validate.io-object": "^1.0.4"
+    "math-abs": "^1.0.2"
   },
   "devDependencies": {
     "browserify": "13.x.x",
