@@ -62,7 +62,7 @@ function generator() {
 ```
 
 The `function` accepts the following `options`:
-*	__max_iter__: integer denoting the maximum number of times the supplied generator object will be called. Default: `1000`.
+*	__max_iter__: integer denoting the maximum number of times the supplied generator object will be called. Default: `1000000`.
 *	__tolerance__: number primitive specifying the used tolerance to assess convergence. Default: `1e-16`.
 *	__keep__: boolean primitive indicating whether to keep the `b0` term in the continued fraction. Default: `false`.
 
@@ -201,7 +201,7 @@ $ make view-browser-tests
 Copyright &copy; 2016. The [Compute.io][compute-io] Authors.
 
 
-[npm-image]: http://img.shields.io/npm/v/math-evalrational.svg
+[npm-image]: http://img.shields.io/npm/v/math-continued-fraction.svg
 [npm-url]: https://npmjs.org/package/math-continued-fraction
 
 [build-image]: http://img.shields.io/travis/math-io/continued-fraction/master.svg
